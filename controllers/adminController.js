@@ -149,8 +149,7 @@ const addProductWithVariants = async (req, res) => {
     if (!existingDescription) {
       return res.status(400).json({ message: 'Invalid category_id. Category not found.' });
     }
-
-    // Create the main product
+  
     const newProductData = {
       name,
       description,
